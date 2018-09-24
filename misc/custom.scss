@@ -4,10 +4,10 @@
 
 @charset "utf-8";
 
-// HLB brand colors
-$primary: #6031b6;
-$secondary: #4372d6;
-$secondary-hover: darken(#4372d6, 20%);
+// Opendoc brand colors
+$primary: #990921;
+$secondary: #454f5b;
+$secondary-hover: darken(#454f5b, 20%);
 
 $media-color-one: #49759a;
 $media-color-two: #744d9f;
@@ -387,6 +387,11 @@ $widescreen: 1152px + (4 * $gap) !default;
 }
 
 .isomer-example{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  background: white;
   transition: .5s ease;
   &:hover {
     opacity: 0.3;
@@ -413,7 +418,7 @@ $widescreen: 1152px + (4 * $gap) !default;
   transition: background 0.5s ease;
 
   &:hover{
-    background: #6031b6;
+    background: #990921;
     opacity: 0.9;
   }
 }

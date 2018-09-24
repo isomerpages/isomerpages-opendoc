@@ -3,13 +3,15 @@ layout: default
 ---
 <style>
 	.bg-hero {
-		background: url('{{site.baseurl}}/images/isomer-banner.png') no-repeat top left;
+		/*background: url('{{site.baseurl}}/images/isomer-banner.png') no-repeat top left;*/
+		background-color:#990921;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 
 	.bg-hero-bottom {
-		background: url('{{site.baseurl}}/images/isomer-banner-bottom.png') no-repeat top left;
+		/*background: url('{{site.baseurl}}/images/isomer-banner-bottom.png') no-repeat top left;*/
+		background-color:#990921;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
@@ -20,14 +22,14 @@ layout: default
         <div class="bp-container margin--top--lg">
             <div class="row is-vcentered is-centered ma">
                 <div class="col has-text-white is-hidden-touch has-text-centered">
-                  <h1 class="display padding--bottom--lg margin--none"><b>Isomer</b></h1>
-                  <p class="padding--bottom--lg">Rapidly launch an informational website for your Government agency</p>
+                  <h1 class="display padding--bottom--lg margin--none"><b>OpenDoc</b></h1>
+                  <p class="padding--bottom--lg">Reimagining Government public documents</p>
                   <a href="{{ site.baseurl }}/#showcase" class="bp-button is-white is-outlined is-uppercase search-button">See Examples</a>
                 </div>
                 <div class="col has-text-white has-text-centered is-hidden-desktop">
-                	<h1 class="display padding--bottom--lg"><b>Isomer</b></h1>
+                	<h1 class="display padding--bottom--lg"><b>OpenDoc</b></h1>
                 	<p class=" padding--bottom--lg">
-                    	Rapidly launch an informational website for your Government agency
+                    	Reimagining public Government documents
                   	</p>
                 	<a href="{{ site.baseurl }}/#showcase" class="bp-button is-white is-outlined is-uppercase search-button">See Examples</a>
                 </div>
@@ -47,11 +49,10 @@ layout: default
         </div>
 	    <div class="row has-text-centered margin--top padding--bottom is-hidden-touch">
 	    	<div class="col helper">
-	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/boa-logo.svg"/>
 	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/govtech-logo.svg"/>
-	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/hlb-logo.svg"/>
-	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/ndi-logo.png"/>
-	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/stratgroup-logo.jpg"/>
+	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/supremecourt-logo.png"/>
+	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/familyjusticecourts-logo.png"/>
+	    		<img class="isomer-agency-logo" src="{{site.baseurl}}/images/statecourts-logo.png"/>
 	    	</div>
 	    </div>
 	    <div class="row has-text-centered margin--top padding--bottom is-hidden-desktop">
@@ -74,47 +75,50 @@ layout: default
 	</div>
 </section>
 
-<section class="bp-section" style="background-color:#6031b6" id="showcase">
+<section class="bp-section" style="background-color:#990921" id="showcase">
     <div class="bp-container padding--bottom--lg">
         <div class="row">
             <div class="col is-8 is-offset-2 has-text-centered padding--top--xl">
                 <p class="padding--bottom eyebrow is-uppercase has-text-white">
                     SHOWCASE
                 </p>
-                <h1 class="padding--bottom has-text-white"><b>Websites generated using Isomer</b></h1>
-                <p class="has-text-white">Our websites are compliant-by-design, so that you can focus on your content</p>
+                <h1 class="padding--bottom has-text-white"><b>Documents reimagined using OpenDoc</b></h1>
+                <p class="has-text-white">Our documents are searchable and mobile responsive by design, so that you can focus on your content</p>
             </div>
         </div>
 	    <div class="row has-text-centered margin--top padding--bottom">
 	        <div class="col is-one-third">
-	        	<a href="https://www.hlb.gov.sg" target="_blank" class="is-media-card">
+	        	<a href="https://intro.opendoc.sg" target="_blank" class="is-media-card">
 	        		<div class="image-hoverable">
-			        	<img class="isomer-example" src="{{site.baseurl}}/images/hlb-example.png" />
+			        	<!-- <img class="isomer-example" src="{{site.baseurl}}/images/hlb-example.png" /> -->
+			        	<div class="isomer-example">OpenDoc<br>Documentation</div>
 			        	<div class="image-hover-overlay"></div>
-			        	<div class="bp-button is-white is-outlined is-uppercase image-hover-button search-button">Visit Site</div>
+			        	<div class="bp-button is-white is-outlined is-uppercase image-hover-button search-button">View document</div>
 			        </div>
 			    </a>
-			    <h5 class="padding--top--sm has-text-white"><b>Hotels Licensing Board</b></h5>
+			    <h5 class="padding--top--sm has-text-white"><b>OpenDoc</b></h5>
 	        </div>
 	        <div class="col is-one-third">
-	        	<a href="https://isomerpages.github.io/isomerpages-stratgroup" target="_blank" class="is-media-card">
+	        	<a href="https://epd.supremecourt.gov.sg/" target="_blank" class="is-media-card">
 	        		<div class="image-hoverable">
-		        		<img class="isomer-example" src="{{site.baseurl}}/images/stratgroup-example.png" />
+		        		<!-- <img class="isomer-example" src="{{site.baseurl}}/images/stratgroup-example.png" /> -->
+		        		<div class="isomer-example">Supreme Court<br>Practice Directions</div>
 		        		<div class="image-hover-overlay"></div>
-		        		<div class="bp-button is-white is-outlined is-uppercase image-hover-button search-button">Visit Site</div>
+		        		<div class="bp-button is-white is-outlined is-uppercase image-hover-button search-button">View document</div>
 		        	</div>
 	        	</a>
-	        	<h5 class="padding--top--sm has-text-white"><b>Strategy Group</b></h5>
+	        	<h5 class="padding--top--sm has-text-white"><b>Supreme Court</b></h5>
 	        </div>
 	        <div class="col is-one-third">
-	        	<a href="https://isomerpages.github.io/isomerpages-boa" target="_blank" class="is-media-card">
+	        	<a href="https://epd.supremecourt.gov.sg/" target="_blank" class="is-media-card">
 	        		<div class="image-hoverable">
-	        			<img class="isomer-example" src="{{site.baseurl}}/images/boa-example.png" />
-	        			<div class="image-hover-overlay"></div>
-	        			<div class="bp-button is-white is-outlined is-uppercase image-hover-button search-button">Visit Site</div>
-	        		</div>
+		        		<!-- <img class="isomer-example" src="{{site.baseurl}}/images/stratgroup-example.png" /> -->
+		        		<div class="isomer-example">Family Justice Courts<br>Practice Directions</div>
+		        		<div class="image-hover-overlay"></div>
+		        		<div class="bp-button is-white is-outlined is-uppercase image-hover-button search-button">View document</div>
+		        	</div>
 	        	</a>
-	        	<h5 class="padding--top--sm has-text-white"><b>Board of Architects</b></h5>
+	        	<h5 class="padding--top--sm has-text-white"><b>Family Justice Courts</b></h5>
 	        </div>
 	    </div>
 	</div>
