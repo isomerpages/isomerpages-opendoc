@@ -263,6 +263,9 @@ $widescreen: 1152px + (4 * $gap) !default;
       }
     }
   }
+  .navbar-end {
+    display: none;
+  }
   .navbar-link:hover:after {
     border-bottom: 1px solid $secondary;
     border-left: 1px solid $secondary;
@@ -399,9 +402,9 @@ $widescreen: 1152px + (4 * $gap) !default;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 250px;
   background: white;
   transition: .5s ease;
+  box-shadow: 0px 0px 10px 0px #0000005c;
   &:hover {
     opacity: 0.3;
   }
@@ -427,7 +430,7 @@ $widescreen: 1152px + (4 * $gap) !default;
   transition: background 0.5s ease;
 
   &:hover{
-    background: $primary;
+    background: #003a9c;
     opacity: 0.9;
   }
 }
@@ -449,5 +452,6 @@ $widescreen: 1152px + (4 * $gap) !default;
 
   .text-card-icon {
     left: 0;
+    height: 4rem;
   }
 }
