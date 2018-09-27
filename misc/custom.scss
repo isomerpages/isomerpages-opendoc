@@ -263,9 +263,13 @@ $widescreen: 1152px + (4 * $gap) !default;
       }
     }
   }
-  .navbar-end {
+  .navbar-end { // Remove search
     display: none;
   }
+  .is-search-bar { // Remove search
+    display: none;
+  }
+
   .navbar-link:hover:after {
     border-bottom: 1px solid $secondary;
     border-left: 1px solid $secondary;
@@ -404,7 +408,7 @@ $widescreen: 1152px + (4 * $gap) !default;
   justify-content: center;
   background: white;
   transition: .5s ease;
-  box-shadow: 0px 0px 10px 0px #0000005c;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.15);
   &:hover {
     opacity: 0.3;
   }
@@ -449,6 +453,7 @@ $widescreen: 1152px + (4 * $gap) !default;
 .text-card {
   padding: 2rem;
   background: white;
+  font-size: 1.4rem;
 
   .text-card-icon {
     left: 0;
