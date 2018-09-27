@@ -461,3 +461,7 @@ $widescreen: 1152px + (4 * $gap) !default;
     height: 4rem;
   }
 }
+
+.has-float-btns {
+  display: none;
+}
