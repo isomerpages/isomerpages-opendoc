@@ -5,5 +5,4 @@ permalink: /resources/
 breadcrumb: Resources
 ---
 
-### Documentation
-[Getting started]({{"https://getting-started.opendoc.sg" | absolute_url }}){:target="_blank"}
+[Documentation]({{"https://docs.opendoc.sg" | absolute_url }}){:target="_blank"}
