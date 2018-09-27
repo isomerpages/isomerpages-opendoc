@@ -5,8 +5,8 @@
 @charset "utf-8";
 
 // Opendoc brand colors
-$primary: #990921;
-$secondary: #454f5b;
+$primary: #454f5b;
+$secondary: #15499b;
 $secondary-hover: darken(#454f5b, 20%);
 
 $media-color-one: #49759a;
@@ -204,6 +204,11 @@ $widescreen: 1152px + (4 * $gap) !default;
   }
 }
 
+.bp-hero-body {
+  background: none;
+  height: 600px;
+}
+
 .bp-section.bp-section-pagetitle {
   background-color: $primary !important;
 }
@@ -243,6 +248,10 @@ $widescreen: 1152px + (4 * $gap) !default;
 
 // Navbar
 .navbar{
+  .navbar-brand img{
+    width: auto;
+    max-height: 2.5rem !important;
+  }
   &-start{
     .navbar-item{
       a{
@@ -418,7 +427,7 @@ $widescreen: 1152px + (4 * $gap) !default;
   transition: background 0.5s ease;
 
   &:hover{
-    background: #990921;
+    background: $primary;
     opacity: 0.9;
   }
 }
@@ -429,6 +438,16 @@ $widescreen: 1152px + (4 * $gap) !default;
   &:hover {
     .image-hover-button{
       opacity: 1;
+      pointer-events: none;
     }
+  }
+}
+
+.text-card {
+  padding: 2rem;
+  background: white;
+
+  .text-card-icon {
+    left: 0;
   }
 }
