@@ -16,6 +16,30 @@ layout: default
 	}
 </style>
 
+{% if page.url == "/" %}
+    {% assign notification_content = content | strip_html | strip %}
+    {% if notification_content != "" %}
+        <div id="notification-bar" class="bp-notification bg-secondary is-marginless">
+            <div class="bp-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="field has-addons bp-notification-flex">
+                            <div class="control has-text-centered has-text-white">
+                                {{ content }}
+                            </div>
+                            <div class="control">
+                                <a id="cancel-notification" class="button has-text-white">
+                                    <span class="delete sgds-icon sgds-icon-cross is-size-4"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endif %}
+
 <section class="bp-hero bg-hero">
 	<div class="bp-hero-body">
 		<div class="bp-container margin--top--lg">
@@ -78,7 +102,7 @@ layout: default
 				<p class="padding--bottom eyebrow is-uppercase has-text-black">
 					SHOWCASE
 				</p>
-				<h1 class="padding--bottom has-text-black"><b></b></h1>
+				<h1 class="has-text-black padding--bottom--lg"><b>Documents reimagined using OpenDoc</b></h1>
 				<p class="has-text-black">See how OpenDoc is already changing how people read documents</p>
 			</div>
 		</div>
@@ -133,7 +157,7 @@ layout: default
 		<div class="row margin--top padding--bottom">
 			<div class="col is-one-third">
 				<div class="text-card is-white">
-					<img class="text-card-icon padding--bottom--sm" src="{{site.baseurl}}/images/ic-responsive.svg" />
+					<img class="text-card-icon padding--bottom--sm" src="{{site.baseurl}}/images/ic-responsive-design.svg" />
 					<h4 class="padding--top--sm has-text-primary padding--bottom--sm"><b>Responsive Design</b></h4>
 					<div class="has-text-primary">Documents adapt to all types of devices, allowing for comfortable viewing no matter where you are</div>
 				</div>
@@ -141,7 +165,7 @@ layout: default
 			</div>
 			<div class="col is-one-third">
 				<div class="text-card is-white">
-					<img class="text-card-icon padding--bottom--sm" src="{{site.baseurl}}/images/ic-fast.svg" />
+					<img class="text-card-icon padding--bottom--sm" src="{{site.baseurl}}/images/ic-powerful-search.svg" />
 					<h4 class="padding--top--sm has-text-primary padding--bottom--sm"><b>Powerful search</b></h4>
 					<div class="has-text-primary">Complex searches are executed extremely fast. Users get relevant content quicker and more accurately</div>
 				</div>
@@ -149,7 +173,7 @@ layout: default
 			</div>
 			<div class="col is-one-third">
 				<div class="text-card is-white">
-					<img class="text-card-icon padding--bottom--sm" src="{{site.baseurl}}/images/ic-secure.svg" />					
+					<img class="text-card-icon padding--bottom--sm" src="{{site.baseurl}}/images/ic-fast-secure.svg" />					
 					<h4 class="padding--top--sm has-text-primary padding--bottom--sm"><b>Fast, secure and scalable</b></h4>
 					<div class="has-text-primary">Documents are hosted in the cloud, and changes can be tracked and made quickly</div>
 				</div>
