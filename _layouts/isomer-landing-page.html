@@ -7,7 +7,7 @@ layout: default
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
-
+	
 	.bg-hero-bottom {
 		background: url('{{site.baseurl}}/images/opendoc-banner-contact.png') no-repeat top center;
 		background-color:#ebb969;
@@ -15,6 +15,30 @@ layout: default
 		background-size: cover;
 	}
 </style>
+
+{% if page.url == "/" %}
+    {% assign notification_content = content | strip_html | strip %}
+    {% if notification_content != "" %}
+        <div id="notification-bar" class="bp-notification bg-secondary is-marginless">
+            <div class="bp-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="field has-addons bp-notification-flex">
+                            <div class="control has-text-centered has-text-white">
+                                {{ content }}
+                            </div>
+                            <div class="control">
+                                <a id="cancel-notification" class="button has-text-white">
+                                    <span class="delete sgds-icon sgds-icon-cross is-size-4"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endif %}
 
 <section class="bp-hero bg-hero">
 	<div class="bp-hero-body">
@@ -78,7 +102,7 @@ layout: default
 				<p class="padding--bottom eyebrow is-uppercase has-text-black">
 					SHOWCASE
 				</p>
-				<h1 class="padding--bottom has-text-black"><b></b></h1>
+				<h1 class="has-text-black padding--bottom--lg"><b>Documents reimagined using OpenDoc</b></h1>
 				<p class="has-text-black">See how OpenDoc is already changing how people read documents</p>
 			</div>
 		</div>
